@@ -1,3 +1,37 @@
-# Dial-a-Septic Tank Cleaners - Error Document Routing
-ErrorDocument 404 /404.html
-ErrorDocument 404 404.html
+# Dial-a-Septic Tank Cleaners - Clean URL & Routing Configuration
+RewriteEngine On
+RewriteBase /
+
+# Redirect /index.html and /home/index.html to /home
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ /home [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+home/index\.html[\s?] [NC]
+RewriteRule ^home/index\.html$ /home [R=301,L]
+
+# Redirect root to /home
+RewriteRule ^$ /home [R=301,L]
+
+# Rewrite /home to home/index.html or index.html
+RewriteRule ^home/?$ home/index.html [L]
+
+# Clean URLs for directories with index.html
+RewriteRule ^services/?$ services/index.html [L]
+RewriteRule ^contact/?$ contact/index.html [L]
+RewriteRule ^terms/?$ terms/index.html [L]
+RewriteRule ^privacy-policy/?$ privacy-policy/index.html [L]
+RewriteRule ^disclaimer/?$ disclaimer/index.html [L]
+RewriteRule ^cookies/?$ cookies/index.html [L]
+RewriteRule ^404-Error/?$ 404-Error/index.html [L]
+
+# Redirect old .html requests to clean URLs
+RewriteRule ^services\.html$ /services [R=301,L]
+RewriteRule ^contact\.html$ /contact [R=301,L]
+RewriteRule ^terms\.html$ /terms [R=301,L]
+RewriteRule ^privacy-policy\.html$ /privacy-policy [R=301,L]
+RewriteRule ^disclaimer\.html$ /disclaimer [R=301,L]
+RewriteRule ^cookies\.html$ /cookies [R=301,L]
+RewriteRule ^404\.html$ /404-Error [R=301,L]
+RewriteRule ^404$ /404-Error [R=301,L]
+
+# Custom 404 Error Page
+ErrorDocument 404 /404-Error/index.html

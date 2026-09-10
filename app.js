@@ -3,6 +3,13 @@
    Interactive Quote Calculator, Locality Dispatcher, Service Modals, WhatsApp
    ========================================================================== */
 
+// Clean URL normalizer: ensure /index.html shows as /home in the browser address bar
+if (window.location.pathname === '/index.html' || window.location.pathname === '/home/index.html') {
+  try {
+    window.history.replaceState(null, '', '/home' + window.location.hash);
+  } catch (e) {}
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
   initHeroVideo();
