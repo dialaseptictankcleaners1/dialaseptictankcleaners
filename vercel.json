@@ -1,12 +1,12 @@
 {
   "rewrites": [
-    { "source": "/home", "destination": "/home/index.html" }
-    { "source": "/home/services", "destination": "/home/services/index.html" }
-    { "source": "/home/terms", "destination": "/home/terms/index.html" }
-    { "source": "/home/disclaimer", "destination": "/home/disclaimer/index.html" }
-    { "source": "/home/cookies", "destination": "/home/cookies/index.html" }
-    { "source": "/home/privacy-policy", "destination": "/home/privacy-policy/index.html" }
-    { "source": "/home/contact", "destination": "/home/contact/index.html" }
-    { "source": "/home/404-Error", "destination": "/home/404/index.html" }
+    { "source": "/home", "destination": "/index.html" }
+    { "source": "/services", "destination": "/services/index.html" }
+    { "source": "/terms", "destination": "/terms/index.html" }
+    { "source": "/disclaimer", "destination": "/disclaimer/index.html" }
+    { "source": "/cookies", "destination": "/cookies/index.html" }
+    { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" }
+    { "source": "/contact", "destination": "/contact/index.html" }
+    { "source": "/404-Error", "destination": "/404/index.html" }
   ]
 }
