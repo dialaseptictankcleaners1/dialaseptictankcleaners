@@ -1,0 +1,28 @@
+{
+  "name": "dialaseptictankcleaners",
+  "version": "1.0.0",
+  "description": "Dial-a-Septic Tank Cleaners - Professional septic tank and drainage cleaning services in Hyderabad",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dialaseptictankcleaners1/dialaseptictankcleaners.git"
+  },
+  "keywords": [
+    "septic-tank-cleaning",
+    "drainage-cleaning",
+    "hyderabad",
+    "sanitation"
+  ],
+  "author": "Dial-a-Septic Tank Cleaners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dialaseptictankcleaners1/dialaseptictankcleaners/issues"
+  },
+  "homepage": "https://github.com/dialaseptictankcleaners1/dialaseptictankcleaners#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
