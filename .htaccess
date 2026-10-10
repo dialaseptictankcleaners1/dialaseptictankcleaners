@@ -16,6 +16,8 @@ RewriteRule ^home/?$ home/index.html [L]
 
 # Clean URLs for directories with index.html
 RewriteRule ^services/?$ services/index.html [L]
+RewriteRule ^blog/?$ blog/index.html [L]
+RewriteRule ^blog/hyderabad-sanitation-guide/?$ blog/hyderabad-sanitation-guide/index.html [L]
 RewriteRule ^contact/?$ contact/index.html [L]
 RewriteRule ^terms/?$ terms/index.html [L]
 RewriteRule ^privacy-policy/?$ privacy-policy/index.html [L]

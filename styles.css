@@ -3539,27 +3539,471 @@ img {
   text-decoration: underline;
 }
 
-@media (max-width: 900px) {
-  .error-quick-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* ==========================================================================
+   BLOG & SANITATION GUIDES STYLING
+   ========================================================================== */
+
+.blog-horizontal-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
-@media (max-width: 600px) {
-  .error-content-card {
-    padding: 2.25rem 1.25rem;
+.blog-horizontal-card:hover .service-h-title {
+  color: var(--primary-brand-dark);
+  text-decoration: underline;
+}
+
+.blog-meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--neutral-medium);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.blog-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.blog-article-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 5rem;
+}
+
+.blog-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--supporting-neutral);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.blog-breadcrumb a {
+  color: var(--primary-brand);
+  text-decoration: none;
+}
+
+.blog-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.blog-post-header {
+  margin-bottom: 2.5rem;
+}
+
+.blog-post-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.65rem;
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--neutral-dark);
+  margin: 0.85rem 0 1.25rem;
+}
+
+.blog-lead-text {
+  font-size: 1.22rem;
+  font-weight: 600;
+  line-height: 1.65;
+  color: var(--neutral-medium);
+  margin-bottom: 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 4px solid var(--primary-brand);
+}
+
+.blog-featured-figure {
+  margin: 2rem 0 2.5rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--neutral-border);
+  background: #FFFFFF;
+}
+
+.blog-featured-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-img-caption {
+  padding: 0.85rem 1.25rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--neutral-medium);
+  background: var(--clean-bg-soft);
+  border-top: 1px solid var(--neutral-border);
+  text-align: center;
+}
+
+/* Stat Metrics Grid */
+.blog-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2.5rem 0;
+}
+
+.blog-metric-card {
+  background: #FFFFFF;
+  border: 2px solid var(--primary-brand);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-metric-card:hover {
+  transform: translateY(-4px);
+}
+
+.blog-metric-value {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: var(--primary-brand);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.blog-metric-desc {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--neutral-dark);
+  line-height: 1.35;
+}
+
+/* Typography & Content Sections */
+.blog-body-content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #2b2b2b;
+}
+
+.blog-body-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: var(--neutral-dark);
+  margin: 3rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--neutral-border);
+}
+
+.blog-body-content h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--primary-brand);
+  margin: 1.75rem 0 0.75rem;
+}
+
+.blog-body-content p {
+  margin-bottom: 1.35rem;
+}
+
+/* Tables */
+.blog-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.75rem 0 2.25rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--neutral-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.blog-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  background: #FFFFFF;
+  font-size: 0.95rem;
+}
+
+.blog-table th {
+  background: var(--clean-bg-soft);
+  color: var(--neutral-dark);
+  font-weight: 900;
+  padding: 1rem 1.25rem;
+  border-bottom: 2px solid var(--primary-brand);
+  font-family: 'Outfit', sans-serif;
+}
+
+.blog-table td {
+  padding: 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--neutral-border);
+  color: var(--neutral-dark);
+  font-weight: 600;
+}
+
+.blog-table tr:last-child td {
+  border-bottom: none;
+}
+
+.blog-table tr:hover td {
+  background: #FAFCFA;
+}
+
+.blog-table td strong {
+  color: var(--primary-brand);
+  font-weight: 800;
+}
+
+/* Alert Callouts */
+.blog-callout-warning {
+  background: #FFF8E1;
+  border: 2px solid #FFB300;
+  border-left: 6px solid #FF8F00;
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0 2rem;
+  font-weight: 700;
+  color: #5D4037;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.blog-callout-info {
+  background: var(--primary-brand-light);
+  border: 1.5px solid rgba(46, 125, 50, 0.3);
+  border-left: 6px solid var(--primary-brand);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0 2rem;
+  font-weight: 700;
+  color: var(--neutral-dark);
+}
+
+/* Grid Cards for Section 2: Why Metro Makes Everything Worse */
+.blog-points-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.blog-point-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--neutral-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.4rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+  transition: all 0.25s ease;
+}
+
+.blog-point-card:hover {
+  border-color: var(--primary-brand);
+  box-shadow: 0 6px 18px rgba(46, 125, 50, 0.08);
+}
+
+.blog-point-card h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary-brand);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blog-point-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--neutral-medium);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Checklist for Warning Signs */
+.blog-signals-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.blog-signal-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.9rem 1.2rem;
+  background: #FFFFFF;
+  border: 1.5px solid #FFCDD2;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  color: #B71C1C;
+  box-shadow: 0 2px 8px rgba(183, 28, 28, 0.04);
+}
+
+.blog-signal-item svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: #D32F2F;
+}
+
+/* Quick Services Mini Cards */
+.blog-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.blog-service-mini-card {
+  background: #FFFFFF;
+  border: 2px solid var(--neutral-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-service-mini-card h4 {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: var(--neutral-dark);
+  margin-bottom: 0.35rem;
+}
+
+.blog-service-mini-card p {
+  font-size: 0.9rem;
+  color: var(--neutral-medium);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.45;
+}
+
+.blog-service-mini-badge {
+  align-self: flex-start;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--primary-brand);
+  background: var(--primary-brand-light);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(46, 125, 50, 0.3);
+}
+
+/* FAQ Accordion */
+.blog-faq-section {
+  margin: 3rem 0;
+}
+
+.blog-faq-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--neutral-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.blog-faq-header {
+  padding: 1.25rem 1.5rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--neutral-dark);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--clean-bg-soft);
+  user-select: none;
+}
+
+.blog-faq-content {
+  padding: 1.25rem 1.5rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--neutral-medium);
+  font-weight: 600;
+  border-top: 1px solid var(--neutral-border);
+}
+
+/* CTA Sticky/Highlight Box */
+.blog-cta-box {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin: 3.5rem 0;
+  box-shadow: 0 12px 32px rgba(46, 125, 50, 0.25);
+}
+
+.blog-cta-box h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+}
+
+.blog-cta-box p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+
+.blog-cta-btn-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog-source-block {
+  font-size: 0.85rem;
+  color: var(--neutral-medium);
+  font-weight: 600;
+  padding: 1.5rem;
+  background: var(--clean-bg-soft);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--neutral-border);
+  margin: 2.5rem 0 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .blog-post-title {
+    font-size: 1.85rem;
   }
-  .error-quick-grid {
+  .blog-metrics-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  .error-cta-group {
-    flex-direction: column;
-    width: 100%;
+  .blog-points-grid,
+  .blog-services-grid {
+    grid-template-columns: 1fr;
   }
-  .error-cta-group .btn {
-    width: 100%;
-    justify-content: center;
+  .blog-article-container {
+    padding: 2rem 1rem 3.5rem;
+  }
+  .blog-cta-box {
+    padding: 2rem 1.25rem;
+  }
+  .blog-cta-box h3 {
+    font-size: 1.6rem;
   }
 }
 
