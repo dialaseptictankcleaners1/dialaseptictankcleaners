@@ -4007,4 +4007,181 @@ img {
   }
 }
 
+/* Fleet Guide Specific Components */
+.blog-vehicle-card {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 0;
+  background: #FFFFFF;
+  border: 1.5px solid var(--neutral-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  margin: 1.5rem 0 2rem;
+  transition: all 0.3s ease;
+}
+
+.blog-vehicle-card:hover {
+  border-color: var(--primary-brand);
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.1);
+  transform: translateY(-2px);
+}
+
+.blog-vehicle-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-vehicle-card-body {
+  padding: 1.35rem 1.65rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.blog-vehicle-card-body p {
+  margin-bottom: 0.65rem;
+}
+
+.blog-vehicle-card-body strong {
+  color: var(--neutral-dark);
+}
+
+.blog-vehicle-rate-badge {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #D84315;
+  background: #FBE9E7;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #FFCCBC;
+  width: fit-content;
+}
+
+/* Quote Callout Banner */
+.blog-quote-banner {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 2.25rem 0;
+  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.15);
+  text-align: center;
+}
+
+.blog-quote-banner span {
+  color: #FFB300;
+}
+
+/* Capacity Range Bar Chart Card */
+.blog-capacity-card {
+  background: #FFFFFF;
+  border: 1.5px solid var(--neutral-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.blog-capacity-card h3 {
+  font-size: 1.15rem;
+  color: var(--primary-brand);
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-capacity-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0.85rem 0;
+}
+
+.blog-capacity-bar-track {
+  background: #E8F5E9;
+  border-radius: 6px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-capacity-bar-fill {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 6px;
+  background: var(--primary-brand);
+  color: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.blog-capacity-bar-fill.highlight {
+  background: linear-gradient(90deg, #F57C00 0%, #E65100 100%);
+}
+
+/* Fleet Question Checklist */
+.blog-checklist-questions {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+.blog-checklist-questions li {
+  padding: 1rem 1rem 1rem 3.25rem;
+  position: relative;
+  border-bottom: 1.5px dashed var(--neutral-border);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--neutral-dark);
+}
+
+.blog-checklist-questions li:before {
+  content: "✓";
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #F57C00;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .blog-vehicle-card {
+    grid-template-columns: 1fr;
+  }
+  .blog-vehicle-card-img {
+    height: 220px;
+    max-height: 220px;
+  }
+  .blog-capacity-row {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+}
+
+
 

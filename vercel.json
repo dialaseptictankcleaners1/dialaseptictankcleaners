@@ -19,6 +19,7 @@
     { "source": "/blog.html", "destination": "/blog", "permanent": true },
     { "source": "/blog/index.html", "destination": "/blog", "permanent": true },
     { "source": "/blog/hyderabad-sanitation-guide/index.html", "destination": "/blog/hyderabad-sanitation-guide", "permanent": true },
+    { "source": "/blog/sewage-drain-cleaning-vehicles-hyderabad/index.html", "destination": "/blog/sewage-drain-cleaning-vehicles-hyderabad", "permanent": true },
     { "source": "/404.html", "destination": "/404-Error", "permanent": true },
     { "source": "/404", "destination": "/404-Error", "permanent": true },
     { "source": "/404-Error/index.html", "destination": "/404-Error", "permanent": true }
@@ -28,6 +29,7 @@
     { "source": "/services", "destination": "/services/index.html" },
     { "source": "/blog", "destination": "/blog/index.html" },
     { "source": "/blog/hyderabad-sanitation-guide", "destination": "/blog/hyderabad-sanitation-guide/index.html" },
+    { "source": "/blog/sewage-drain-cleaning-vehicles-hyderabad", "destination": "/blog/sewage-drain-cleaning-vehicles-hyderabad/index.html" },
     { "source": "/contact", "destination": "/contact/index.html" },
     { "source": "/terms", "destination": "/terms/index.html" },
     { "source": "/privacy-policy", "destination": "/privacy-policy/index.html" },
