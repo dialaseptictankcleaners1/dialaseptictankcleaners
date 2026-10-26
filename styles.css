@@ -3915,6 +3915,12 @@ img {
   border-radius: var(--radius-md);
   margin-bottom: 1rem;
   overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-faq-card.active {
+  border-color: var(--primary-brand);
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.08);
 }
 
 .blog-faq-header {
@@ -3928,15 +3934,39 @@ img {
   align-items: center;
   background: var(--clean-bg-soft);
   user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.blog-faq-header:hover {
+  background: #f0f7f1;
+  color: var(--primary-brand);
+}
+
+.blog-faq-arrow {
+  font-size: 1.25rem;
+  color: var(--primary-brand);
+  transition: transform 0.25s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+.blog-faq-card.active .blog-faq-arrow {
+  transform: rotate(180deg);
 }
 
 .blog-faq-content {
+  display: none;
   padding: 1.25rem 1.5rem;
   font-size: 0.98rem;
   line-height: 1.6;
   color: var(--neutral-medium);
   font-weight: 600;
   border-top: 1px solid var(--neutral-border);
+  background: #FFFFFF;
+}
+
+.blog-faq-card.active .blog-faq-content {
+  display: block;
 }
 
 /* CTA Sticky/Highlight Box */
